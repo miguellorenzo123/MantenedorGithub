@@ -99,6 +99,9 @@
     <EmbeddedResource Include="ManteEmpleado.resx">
       <DependentUpon>ManteEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManteMaterial.resx">
+      <DependentUpon>ManteMaterial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mantenedores.resx">
       <DependentUpon>Mantenedores.cs</DependentUpon>
     </EmbeddedResource>
