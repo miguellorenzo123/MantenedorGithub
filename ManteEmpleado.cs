@@ -15,6 +15,24 @@ namespace MantenedorGithub
         public ManteEmpleado()
         {
             InitializeComponent();
+
+        }
+
+      
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            txtapellido.Text = "";
+            txtcodigo.Text = "";
+            txtnombre.Text = "";
+            txtocupacion.Text = "";
+            txtsector.Text = "";
+            txtresultado.Text = "";
+        }
+
+        private void btnaplicar_Click(object sender, EventArgs e)
+        {
+            txtresultado.Text = "registrado";
         }
     }
 }
