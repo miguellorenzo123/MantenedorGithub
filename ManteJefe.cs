@@ -16,5 +16,24 @@ namespace MantenedorGithub
         {
             InitializeComponent();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Jefe registrado con éxito", "Registro");
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtNombre.Text = "";
+            txtApellidos.Text = "";
+            txtDni.Text = "";
+            txtDireccion.Text = "";
+            txtNumero.Text = "";
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
