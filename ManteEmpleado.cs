@@ -25,14 +25,23 @@ namespace MantenedorGithub
             txtapellido.Text = "";
             txtcodigo.Text = "";
             txtnombre.Text = "";
-            txtocupacion.Text = "";
             txtsector.Text = "";
             txtresultado.Text = "";
         }
 
         private void btnaplicar_Click(object sender, EventArgs e)
         {
-            txtresultado.Text = "registrado";
+            listBox1.Items.Add("codigo: " + txtcodigo.Text);
+            listBox1.Items.Add("nombre: " + txtnombre.Text);
+            listBox1.Items.Add("apellido : " + txtapellido.Text);
+            listBox1.Items.Add("sector: " + txtsector.Text);
+
+            txtresultado.Text = "empleado registrado con exito";
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
