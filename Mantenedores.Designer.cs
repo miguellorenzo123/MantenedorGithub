@@ -134,6 +134,7 @@ namespace MantenedorGithub
             this.Controls.Add(this.btnEmpleado);
             this.Name = "FormMantenedores";
             this.Text = "Mantenedores";
+            this.Load += new System.EventHandler(this.FormMantenedores_Load);
             this.ResumeLayout(false);
 
         }

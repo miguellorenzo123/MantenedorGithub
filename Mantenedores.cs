@@ -15,6 +15,7 @@ namespace MantenedorGithub
         public FormMantenedores()
         {
             InitializeComponent();
+
         }
 
         private void btnEmpleado_Click(object sender, EventArgs e)
@@ -63,6 +64,12 @@ namespace MantenedorGithub
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FormMantenedores_Load(object sender, EventArgs e)
+        {
+            Conexion cn = new Conexion();
+            cn.abrir();
         }
     }
 }
